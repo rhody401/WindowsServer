@@ -1,0 +1,1 @@
+copy-item -path D:\filemove.txt -destination D:\targetfolder\ -ToSession (new-PSSession <targetFQDN> credential <aduser> -UseSSL -SessionOption (New-PSSessionOption -ProxyAccessType NoProxyServer -SkipCACheck))
