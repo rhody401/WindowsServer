@@ -1,0 +1,8 @@
+#Import Module for RemoteDesktop
+Import-Module RemoteDesktop 
+#Install Remote Session Host
+Install-WindowsFeature -Name RD-Server
+#Add Target License server and Mode (PerUser or PerDevice)
+Set-RDLicenseConfiguration -LicenseServer <licenseserverFQDN> -Mode PerDevice 
+#Add Target License server and Mode (PerUser or PerDevice)
+#Set-RDLicenseConfiguration -LicenseServer @("<licenseserverFQDN>,<licenseserver2FQDN>") -Mode PerDevice 
