@@ -1,0 +1,2 @@
+#Powershell  Checksum file
+Get-FileHash -Algorithm MD5 -Path <filepath>
